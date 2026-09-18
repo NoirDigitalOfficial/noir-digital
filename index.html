@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Digital — Independent Digital Studio</title>
+    <meta
+    name="description"
+    content="Noir Digital creates clean, modern websites for businesses worldwide."
+>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ND.png">
+    <meta property="og:title" content="Noir Digital — Independent Digital Studio">
+
+<meta
+    property="og:description"
+    content="Custom websites. Sharp design. Built for businesses worldwide."
+>
+
+<meta
+    property="og:image"
+    content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/noir-digital-preview.png"
+>
+
+<meta
+    property="og:type"
+    content="website"
+>
+</head>
+
+<body>
+
+    <div class="side-text side-left">
+        NOIR DIGITAL — CREATIVE DEVELOPMENT
+    </div>
+
+    <div class="side-text side-right">
+        DESIGN • CODE • IDENTITY
+    </div>
+
+    <header>
+
+        <div class="top-left">
+            <span>INDEPENDENT DIGITAL STUDIO</span>
+            <span>EST. 2026</span>
+        </div>
+
+        <div class="top-right">
+            <span>INTERNATIONAL SERVICES</span>
+            <span>● ALWAYS AVAILABLE</span>
+        </div>
+
+        <h1>NOIR DIGITAL</h1>
+
+        <div class="header-line"></div>
+
+        <nav>
+            <a href="#about">ABOUT</a>
+           <a href="#" id="contact-open">CONTACT</a> 
+            <a href="#" id="services-open">SERVICES</a>
+        </nav>
+        <div class="studio-statement">
+    <p>WE BUILD DIGITAL PRESENCE WITH INTENTION.</p>
+
+
+    </header>
+
+    <main>
+
+        <section id="work">
+
+            <div class="work-content">
+
+                <h2>SELECTED WORK</h2>
+
+                <a
+                    class="work-card"
+                    href="https://noirdigitalofficial.github.io/noir-and-blade/"
+                    target="_blank"
+                >
+                    <div>
+                        <span>01</span>
+                        <h3>NOIR & BLADE</h3>
+                        <p>Website Design · Development</p>
+                    </div>
+
+                    <div class="work-action">
+    <span>VIEW PROJECT</span>
+    <div class="work-arrow">↗</div>
+</div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="about">
+
+            <div class="about-content">
+
+                <h2>ABOUT</h2>
+
+                <p>
+                    Noir Digital is an independent digital studio focused on
+                    creating clean, modern websites for businesses that want
+                    to stand out without shouting.
+                </p>
+
+                <p>
+                    Every project is built around simplicity, sharp design,
+                    smooth interaction, and a strong visual identity. From
+                    the first idea to the finished website, the goal is to
+                    create something that feels unique to the business behind it.
+                </p>
+
+                <p>
+                    No unnecessary clutter. No templates that feel like everyone
+                    else's. Just thoughtful design built to leave an impression.
+                </p>
+
+            </div>
+<div class="alternative-contact">
+    <div class="alternative-contact-content">
+        <span>ALTERNATIVE CONTACT INFO</span>
+        <a href="#" id="alternative-contact-open">CLICK HERE</a>
+    </div>
+</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>NOIR DIGITAL</h2>
+        <p>Est. 2026</p>
+        <span>Elegant. Sharp. Noir.</span>
+    </footer>
+<script>
+    const aboutSection = document.querySelector("#about");
+
+    const aboutObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add("show-contact");
+                } else {
+                    aboutSection.classList.remove("show-contact");
+                }
+            });
+        },
+        {
+            threshold: 0.35
+        }
+    );
+
+    aboutObserver.observe(aboutSection);
+</script>
+<div class="contact-overlay" id="contact-overlay">
+
+    <div class="contact-popup">
+
+        <button class="contact-close" id="contact-close">×</button>
+
+        <h2>CONTACT</h2>
+
+        <div class="contact-line"></div>
+
+        <p class="contact-intro">
+            Have a project in mind? Let's build something that stands out.
+        </p>
+
+        <div class="contact-methods">
+
+            <a href="mailto:noirdigitalsupport@gmail.com">
+                <span>EMAIL</span>
+                noirdigitalsupport@gmail.com
+            </a>
+
+            <a
+                href="https://www.instagram.com/noirdigitalsupport/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>INSTAGRAM</span>
+                @noirdigitalsupport
+            </a>
+
+            <a href="tel:06XXXXXXXX">
+    <span>PHONE</span>
+    06X XXX XXX
+</a>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+    contactOverlay.addEventListener("click", (event) => {
+        if (event.target === contactOverlay) {
+            contactOverlay.classList.remove("active");
+        }
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+
+            contactOverlay.classList.remove("active");
+
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+
+        }
+
+    });
+</script>
+<div class="services-overlay" id="services-overlay">
+
+    <div class="services-popup">
+
+        <button class="services-close" id="services-close">×</button>
+
+        <h2>SERVICES</h2>
+
+        <p class="services-intro">
+            Everything you need to know before ordering a website.
+        </p>
+
+        <div class="services-line"></div>
+
+
+        <!-- GENERAL -->
+
+        <section class="services-section">
+
+            <h3>GENERAL</h3>
+
+            <div class="service-info">
+
+                <h4>Worldwide Services</h4>
+                <p>
+                    Noir Digital provides website services internationally,
+                    serving clients from any country, region, or continent.
+                </p>
+
+                <h4>Websites for Any Purpose</h4>
+                <p>
+                    We create websites for a wide range of purposes, from
+                    business websites and portfolios to landing pages and
+                    multipurpose websites.
+                </p>
+
+                <h4>Fully Customized</h4>
+                <p>
+                    When ordering a website, you can fully customize your
+                    project. Share your specific ideas, features, designs,
+                    or concepts, and we will work to bring them to life as
+                    closely as possible.
+                </p>
+
+                <h4>Changes Before Delivery</h4>
+                <p>
+                    If you change your mind about an idea or design while
+                    your website is still being developed, you can send a
+                    follow-up email explaining what you would like changed.
+                </p>
+
+                <h4>After Delivery</h4>
+                <p>
+                    Noir Digital does not offer paid monthly maintenance.
+                    Websites are delivered as a one-time purchase.
+                </p>
+
+                <p>
+                    Once the website has been delivered and confirmed as
+                    functional, any future changes or fixes to the website
+                    will be charged separately from the original website price.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRICES & DELIVERY -->
+
+        <section class="services-section">
+
+            <h3>PRICES &amp; DELIVERY</h3>
+
+            <div class="services-columns">
+
+                <div class="service-info">
+
+                    <h4>Dynamic Pricing</h4>
+
+                    <p>
+                        Website prices are dynamic and depend on the size,
+                        design, level of detail, functionality, and purpose
+                        of the website.
+                    </p>
+
+                    <h4>Quote Time</h4>
+
+                    <p>
+                        The estimated time to receive a price quote is
+                        <strong>1–5 days</strong>, depending primarily on the
+                        size and complexity of the website and the current
+                        order queue.
+                    </p>
+
+                </div>
+
+
+                <div class="service-info">
+
+                    <h4>Price Range</h4>
+
+                    <p class="price-range">
+                        €20 — €400
+                    </p>
+
+                    <p>
+                        The final price may vary depending on the requirements
+                        of the individual project.
+                    </p>
+
+                    <h4>Waiting Time</h4>
+
+                    <p>
+                        Noir Digital will make every effort to complete and
+                        deliver each website as soon as possible.
+                    </p>
+
+                    <p>
+                        The expected delivery time is <strong>within 14 days</strong>,
+                        depending on the size and complexity of the website,
+                        the amount of customization required, and the current
+                        order queue.
+                    </p>
+
+                    <p>
+                        Customers will be informed if a project requires
+                        additional time.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER PROCESS -->
+
+        <section class="services-section order-process">
+
+            <h3>ORDER PROCESS</h3>
+
+            <div class="process-list">
+
+                <div class="process-step">
+                    <span>01</span>
+                    <div>
+                        <h4>CONTACT</h4>
+                        <p>Send us your website requirements.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <span>02</span>
+                    <div>
+                        <h4>DISCUSS</h4>
+                        <p>Finalize your ideas and requirements.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <span>03</span>
+                    <div>
+                        <h4>QUOTE</h4>
+                        <p>Receive your custom website price.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <span>04</span>
+                    <div>
+                        <h4>BUILD</h4>
+                        <p>We turn your requirements into the finished website.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <span>05</span>
+                    <div>
+                        <h4>DELIVERY</h4>
+                        <p>Receive your completed website.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</div>
+   <script>
+    const contactOpen = document.querySelector("#contact-open");
+    const contactClose = document.querySelector("#contact-close");
+    const contactOverlay = document.querySelector("#contact-overlay");
+    const alternativeContactOpen = document.querySelector("#alternative-contact-open");
+
+
+    contactOpen.addEventListener("click", (event) => {
+        event.preventDefault();
+        contactOverlay.classList.add("active");
+        document.body.classList.add("popup-open");
+        contactOpen.blur();
+    });
+
+
+    alternativeContactOpen.addEventListener("click", (event) => {
+        event.preventDefault();
+        contactOverlay.classList.add("active");
+        alternativeContactOpen.blur();
+    });
+
+
+    contactClose.addEventListener("click", () => {
+        contactOverlay.classList.remove("active");
+    });
+
+
+    contactOverlay.addEventListener("click", (event) => {
+        if (event.target === contactOverlay) {
+            contactOverlay.classList.remove("active");
+        }
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+            contactOverlay.classList.remove("active");
+
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        }
+
+    });
+    const servicesOpen = document.querySelector("#services-open");
+const servicesClose = document.querySelector("#services-close");
+const servicesOverlay = document.querySelector("#services-overlay");
+
+
+servicesOpen.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    servicesOverlay.classList.add("active");
+
+    servicesOpen.blur();
+});
+
+
+servicesClose.addEventListener("click", () => {
+    servicesOverlay.classList.remove("active");
+});
+
+
+servicesOverlay.addEventListener("click", (event) => {
+    if (event.target === servicesOverlay) {
+        servicesOverlay.classList.remove("active");
+    }
+});
+</script>
+<script>
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+
+            contactOverlay.classList.remove("active");
+            servicesOverlay.classList.remove("active");
+
+        }
+
+    });
+</script>
+<script>
+    const sections = document.querySelectorAll("#work, #about");
+
+    const sectionObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show-section");
+                }
+
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    sections.forEach((section) => {
+        sectionObserver.observe(section);
+    });
+</script>
+</body>
+</html>
+<script>
+    let currentPosition = 50;
+    let targetPosition = 50;
+
+    window.addEventListener("scroll", () => {
+        targetPosition = 50 + (window.scrollY * 0.03);
+    });
+
+    function animateSideText() {
+      currentPosition += (targetPosition - currentPosition) * 0.035;
+
+        document.querySelector(".side-left").style.top = currentPosition + "%";
+        document.querySelector(".side-right").style.top = currentPosition + "%";
+
+        requestAnimationFrame(animateSideText);
+    }
+
+    animateSideText();
+</script>
